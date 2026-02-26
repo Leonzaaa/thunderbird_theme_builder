@@ -3,8 +3,6 @@ export default {
         // Brand & Accent
         brand:           '#F40B17',
         brand_hover:     '#DC0A15',
-        accent:          '#0D50F2',
-        accent_hover:    '#0C48DA',
 
         // Brand (Black)
         primary:         '#1C1D21',
@@ -29,31 +27,26 @@ export default {
         onyx_950:        '#191B1D',
 
         // Lazurit (синий)
-        lazurit_400:     '#4995FF',
         lazurit_500:     '#1C7BFF',
 
-        // Ruby (красный — основной акцент в этой теме)
-        ruby_100:        '#FCD6DD',
+        // Ruby (красный)
         ruby_300:        '#F7839A',
         ruby_500:        '#F23057',
         ruby_600:        '#C22646',
+        ruby_800:        '#611323',
 
         // Coral
-        coral_100:       '#FFE5E2',
-        coral_300:       '#FFB2A9',
         coral_500:       '#FF7E70',
 
         // Emerald (success)
         emerald_500:     '#26BF8C',
+        emerald_700:     '#177354',
 
         // Amber (warning)
         amber_300:       '#FEBB7A',
         amber_500:       '#FE8E21',
         amber_600:       '#CB721A',
         amber_700:       '#985514',
-
-        // Kyanite (голубой)
-        kyanite_500:     '#00AAFF',
 
         // Aquamarine (бирюзовый)
         aquamarine_500:  '#00C2CC',
@@ -63,57 +56,57 @@ export default {
     },
 
     theme_colors: {
-        // Окно — светлый фон
-        frame:                        'white',              // #FCFCFC
-        frame_inactive:               'white',              // #FCFCFC
+        // Окно — тёмный фон (Surface/Background Dark = Onyx/950)
+        frame:                        'onyx_950',           // #191B1D
+        frame_inactive:               'onyx_950',           // #191B1D
 
         // Вкладки
-        tab_background_text:          'primary',            // #1C1D21
-        tab_background_separator:     'onyx_150',           // #D8DBDE
+        tab_background_text:          'onyx_300',           // #B0B6BD
+        tab_background_separator:     'onyx_800',           // #32353A
         tab_line:                     'brand',              // #F40B17
         tab_loading:                  'coral_500',          // #FF7E70
-        tab_selected:                 'white',              // #FCFCFC
-        tab_text:                     'primary',            // #1C1D21
+        tab_selected:                 'onyx_900',           // #25282B
+        tab_text:                     'white',              // #FCFCFC
 
-        // Тулбар
-        toolbar:                      'onyx_25',            // #F8F9F9
-        toolbar_text:                 'primary',            // #1C1D21
-        toolbar_top_separator:        'onyx_150',           // #D8DBDE
-        toolbar_bottom_separator:     'onyx_150',           // #D8DBDE
-        toolbar_vertical_separator:   'onyx_150',           // #D8DBDE
+        // Тулбар (Surface/Level-1 Dark = Onyx/900)
+        toolbar:                      'onyx_900',           // #25282B
+        toolbar_text:                 'white',              // #FCFCFC
+        toolbar_top_separator:        'onyx_800',           // #32353A
+        toolbar_bottom_separator:     'onyx_800',           // #32353A
+        toolbar_vertical_separator:   'onyx_800',           // #32353A
 
-        // Поля ввода
-        toolbar_field:                'onyx_50',            // #F2F3F4
-        toolbar_field_text:           'primary',            // #1C1D21
-        toolbar_field_border:         'onyx_150',           // #D8DBDE
-        toolbar_field_focus:          'white',              // #FCFCFC
-        toolbar_field_text_focus:     'primary',            // #1C1D21
+        // Поля ввода (Fill/Input Dark = Onyx/950)
+        toolbar_field:                'onyx_950',           // #191B1D
+        toolbar_field_text:           'white',              // #FCFCFC
+        toolbar_field_border:         'onyx_700',           // #4A5057
+        toolbar_field_focus:          'onyx_900',           // #25282B
+        toolbar_field_text_focus:     'white',              // #FCFCFC
         toolbar_field_border_focus:   'brand',              // #F40B17
         toolbar_field_highlight:      'brand',              // #F40B17
         toolbar_field_highlight_text: 'white',              // #FCFCFC
 
         // Кнопки
-        button_background_active:     'onyx_100',           // #E5E7E9
-        button_background_hover:      'onyx_50',            // #F2F3F4
+        button_background_active:     'onyx_700',           // #4A5057
+        button_background_hover:      'onyx_800',           // #32353A
 
         // Иконки
-        icons:                        'onyx_600',           // #636A74
+        icons:                        'onyx_300',           // #B0B6BD
         icons_attention:              'brand',              // #F40B17
 
-        // Боковая панель
-        sidebar:                      'white',              // #FCFCFC
-        sidebar_text:                 'primary',            // #1C1D21
-        sidebar_border:               'onyx_150',           // #D8DBDE
-        sidebar_highlight:            'ruby_100',           // #FCD6DD
-        sidebar_highlight_text:       'primary',            // #1C1D21
+        // Боковая панель (Surface/Navigation Dark = Onyx/800)
+        sidebar:                      'onyx_950',           // #191B1D
+        sidebar_text:                 'white',              // #FCFCFC
+        sidebar_border:               'onyx_800',           // #32353A
+        sidebar_highlight:            'ruby_800',           // #611323
+        sidebar_highlight_text:       'white',              // #FCFCFC
         sidebar_highlight_border:     'brand',              // #F40B17
 
-        // Всплывающие меню
-        popup:                        'white',              // #FCFCFC
-        popup_text:                   'primary',            // #1C1D21
-        popup_border:                 'onyx_150',           // #D8DBDE
-        popup_highlight:              'ruby_100',           // #FCD6DD
-        popup_highlight_text:         'primary',            // #1C1D21
+        // Всплывающие меню (Overlay Dark = Onyx/950)
+        popup:                        'onyx_900',           // #25282B
+        popup_text:                   'white',              // #FCFCFC
+        popup_border:                 'onyx_700',           // #4A5057
+        popup_highlight:              'ruby_800',           // #611323
+        popup_highlight_text:         'white',              // #FCFCFC
     },
 
     theme_experiment_colors: {
@@ -126,21 +119,21 @@ export default {
         '--button-primary-hover-background-color': 'brand_hover',       // #DC0A15
 
         // Фоны
-        '--layout-background-0': 'white',              // #FCFCFC
-        '--layout-background-1': 'onyx_25',            // #F8F9F9
-        '--layout-background-2': 'onyx_50',            // #F2F3F4
-        '--layout-color-1':      'primary',            // #1C1D21
-        '--bg-color':            'white',              // #FCFCFC
+        '--layout-background-0': 'onyx_950',           // #191B1D
+        '--layout-background-1': 'onyx_900',           // #25282B
+        '--layout-background-2': 'onyx_800',           // #32353A
+        '--layout-color-1':      'white',              // #FCFCFC
+        '--bg-color':            'onyx_950',           // #191B1D
 
         // Список писем
-        '--tree-view-bg':                     'white',              // #FCFCFC
-        '--tree-view-header-hover-bg':        'onyx_50',            // #F2F3F4
-        '--tree-view-header-hover-active-bg': 'onyx_100',           // #E5E7E9
+        '--tree-view-bg':                     'onyx_950',           // #191B1D
+        '--tree-view-header-hover-bg':        'onyx_800',           // #32353A
+        '--tree-view-header-hover-active-bg': 'onyx_700',           // #4A5057
 
         '--new-folder-color': 'brand',              // #F40B17
 
         // Боковая панель иконок
-        '--spaces-bg-color':                 'white',              // #FCFCFC
+        '--spaces-bg-color':                 'onyx_950',           // #191B1D
         '--spaces-button-active-text-color': 'white',              // #FCFCFC
         '--spaces-button-active-bg-color':   'brand',              // #F40B17
 
@@ -148,9 +141,9 @@ export default {
         '--folder-color-inbox':         'brand',              // #F40B17
         '--folder-color-draft':         'amber_500',          // #FE8E21
         '--folder-color-sent':          'aquamarine_500',     // #00C2CC
-        '--folder-color-archive':       'onyx_400',           // #969DA7
+        '--folder-color-archive':       'onyx_500',           // #7C8591
         '--folder-color-spam':          'ruby_500',           // #F23057
-        '--folder-color-trash':         'onyx_500',           // #7C8591
+        '--folder-color-trash':         'onyx_600',           // #636A74
         '--folder-color-template':      'amber_300',          // #FEBB7A
         '--folder-color-newsletter':    'emerald_500',        // #26BF8C
         '--folder-color-rss':           'amber_600',          // #CB721A
@@ -162,7 +155,7 @@ export default {
         // Бейджи непрочитанных
         '--folderpane-unread-new-count-background': 'brand',              // #F40B17
         '--folderpane-unread-count-text':           'white',              // #FCFCFC
-        '--folderpane-unread-count-background':     'onyx_200',           // #CBCED3
+        '--folderpane-unread-count-background':     'onyx_700',           // #4A5057
 
         // Иконки в списке писем
         '--thread-pane-flag-fill':     'amber_500',           // #FE8E21
@@ -173,15 +166,15 @@ export default {
         '--thread-pane-unread-stroke': 'brand_hover',         // #DC0A15
 
         // Управление аккаунтом
-        '--accounts-bg-color':             'white',              // #FCFCFC
-        '--button-hover-background-color': 'onyx_50',            // #F2F3F4
+        '--accounts-bg-color':             'onyx_950',           // #191B1D
+        '--button-hover-background-color': 'onyx_800',           // #32353A
         '--primary-color-hover':           'brand_hover',        // #DC0A15
-        '--btn-bg':                        'onyx_50',            // #F2F3F4
-        '--btn-bg-hover':                  'onyx_100',           // #E5E7E9
+        '--btn-bg':                        'onyx_800',           // #32353A
+        '--btn-bg-hover':                  'onyx_700',           // #4A5057
 
         // Календарь
         '--viewHighlightBorderColor':     'brand',              // #F40B17
-        '--viewDayBoxSelectedBackground': 'ruby_100',           // #FCD6DD
+        '--viewDayBoxSelectedBackground': 'ruby_800',           // #611323
         '--viewTodayLabelColor':          'white',              // #FCFCFC
         '--viewTodayLabelBackground':     'brand',              // #F40B17
     },

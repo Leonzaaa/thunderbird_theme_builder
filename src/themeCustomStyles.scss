@@ -1,7 +1,7 @@
-/* ДИТ Light-Red theme — custom overrides */
+/* ДИТ Dark-Red theme — custom overrides */
 
 :root {
-    scrollbar-color: var(--onyx_200) var(--onyx_50);
+    scrollbar-color: var(--onyx_700) var(--onyx_950);
 }
 
 ::selection {
@@ -10,7 +10,7 @@
 }
 
 .message-header-container {
-    background-color: var(--white) !important;
+    background-color: var(--onyx_900) !important;
 }
 
 .unread .subject {
@@ -23,9 +23,9 @@
 }
 
 a:not(.moz-txt-link) {
-    color: var(--brand) !important;
+    color: var(--coral_500) !important;
 }
 
 a:hover {
-    color: var(--brand_hover) !important;
+    color: var(--brand) !important;
 }
