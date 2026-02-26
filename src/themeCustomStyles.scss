@@ -1,7 +1,7 @@
-/* ДИТ Light theme — custom overrides */
+/* ДИТ Dark Blue theme — custom overrides */
 
 :root {
-    scrollbar-color: var(--onyx_200) var(--onyx_50);
+    scrollbar-color: var(--onyx_600) var(--onyx_900);
 }
 
 ::selection {
@@ -10,7 +10,7 @@
 }
 
 .message-header-container {
-    background-color: var(--white) !important;
+    background-color: var(--primary) !important;
 }
 
 .unread .subject {

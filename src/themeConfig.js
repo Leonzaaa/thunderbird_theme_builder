@@ -1,10 +1,10 @@
 export default {
     color_scheme: {
-        // Brand & Accent
+        // Brand & Accent (Dark Blue)
         brand:           '#F40B17',
         brand_hover:     '#DC0A15',
-        accent:          '#0D50F2',
-        accent_hover:    '#0C48DA',
+        accent:          '#4995FF',   // lazurit_400 — light blue
+        accent_hover:    '#1662CC',   // lazurit_600
 
         // Brand (Black)
         primary:         '#1C1D21',
@@ -28,14 +28,11 @@ export default {
         onyx_900:        '#25282B',
         onyx_950:        '#191B1D',
 
-        // Lazurit (акцентный синий)
+        // Lazurit (акцентный синий) — без 400/500 (дублируют accent)
         lazurit_100:     '#D2E5FF',
         lazurit_150:     '#BBD8FF',
         lazurit_200:     '#A4CAFF',
         lazurit_300:     '#77B0FF',
-        lazurit_400:     '#4995FF',
-        lazurit_500:     '#1C7BFF',
-        lazurit_600:     '#1662CC',
         lazurit_700:     '#114A99',
         lazurit_800:     '#0B3166',
         lazurit_900:     '#08254C',
@@ -105,89 +102,89 @@ export default {
     },
 
     theme_colors: {
-        // Окно — светлый фон (Surface/Background = Brand/White)
-        frame:                        'white',              // #FCFCFC
-        frame_inactive:               'white',              // #FCFCFC
+        // Окно — тёмный фон
+        frame:                        'primary',            // #1C1D21
+        frame_inactive:               'primary',            // #1C1D21
 
         // Вкладки
-        tab_background_text:          'primary',            // #1C1D21
-        tab_background_separator:     'onyx_150',           // #D8DBDE
-        tab_line:                     'accent',             // #0D50F2
-        tab_loading:                  'lazurit_500',        // #1C7BFF
-        tab_selected:                 'white',              // #FCFCFC
-        tab_text:                     'primary',            // #1C1D21
+        tab_background_text:          'white',              // #FCFCFC
+        tab_background_separator:     'onyx_700',           // #4A5057
+        tab_line:                     'accent',             // #4995FF
+        tab_loading:                  'accent',             // #4995FF
+        tab_selected:                 'onyx_900',          // #25282B
+        tab_text:                     'white',              // #FCFCFC
 
-        // Тулбар (Surface/Level-1 = Onyx/25)
-        toolbar:                      'onyx_25',            // #F8F9F9
-        toolbar_text:                 'primary',            // #1C1D21
-        toolbar_top_separator:        'onyx_150',           // #D8DBDE
-        toolbar_bottom_separator:     'onyx_150',           // #D8DBDE
-        toolbar_vertical_separator:   'onyx_150',           // #D8DBDE
+        // Тулбар
+        toolbar:                      'onyx_950',          // #191B1D
+        toolbar_text:                 'white',              // #FCFCFC
+        toolbar_top_separator:        'onyx_800',          // #32353A
+        toolbar_bottom_separator:     'onyx_800',          // #32353A
+        toolbar_vertical_separator:    'onyx_800',          // #32353A
 
-        // Поля ввода (Fill/Input = Transparent/Onyx/Onyx-10 на light)
-        toolbar_field:                'onyx_50',            // #F2F3F4
-        toolbar_field_text:           'primary',            // #1C1D21
-        toolbar_field_border:         'onyx_150',           // #D8DBDE
-        toolbar_field_focus:          'white',              // #FCFCFC
-        toolbar_field_text_focus:     'primary',            // #1C1D21
-        toolbar_field_border_focus:   'accent',             // #0D50F2
-        toolbar_field_highlight:      'accent',             // #0D50F2
+        // Поля ввода
+        toolbar_field:                'onyx_900',          // #25282B
+        toolbar_field_text:           'white',              // #FCFCFC
+        toolbar_field_border:         'onyx_700',           // #4A5057
+        toolbar_field_focus:          'onyx_800',          // #32353A
+        toolbar_field_text_focus:     'white',              // #FCFCFC
+        toolbar_field_border_focus:   'accent',             // #4995FF
+        toolbar_field_highlight:      'accent',             // #4995FF
         toolbar_field_highlight_text: 'white',              // #FCFCFC
 
         // Кнопки
-        button_background_active:     'onyx_100',           // #E5E7E9
-        button_background_hover:      'onyx_50',            // #F2F3F4
+        button_background_active:     'onyx_700',           // #4A5057
+        button_background_hover:      'onyx_800',           // #32353A
 
         // Иконки
-        icons:                        'onyx_600',           // #636A74
-        icons_attention:              'accent',             // #0D50F2
+        icons:                        'onyx_300',           // #B0B6BD
+        icons_attention:              'accent',             // #4995FF
 
-        // Боковая панель (Surface/Navigation = Brand/White)
-        sidebar:                      'white',              // #FCFCFC
-        sidebar_text:                 'primary',            // #1C1D21
-        sidebar_border:               'onyx_150',           // #D8DBDE
-        sidebar_highlight:            'lazurit_100',        // #D2E5FF
-        sidebar_highlight_text:       'primary',            // #1C1D21
-        sidebar_highlight_border:     'accent',             // #0D50F2
+        // Боковая панель
+        sidebar:                      'primary',            // #1C1D21
+        sidebar_text:                 'white',              // #FCFCFC
+        sidebar_border:               'onyx_800',          // #32353A
+        sidebar_highlight:            'lazurit_950',       // #061933
+        sidebar_highlight_text:       'white',              // #FCFCFC
+        sidebar_highlight_border:     'accent',             // #4995FF
 
-        // Всплывающие меню (Overlay/Default = Brand/White)
-        popup:                        'white',              // #FCFCFC
-        popup_text:                   'primary',            // #1C1D21
-        popup_border:                 'onyx_150',           // #D8DBDE
-        popup_highlight:              'lazurit_100',        // #D2E5FF
-        popup_highlight_text:         'primary',            // #1C1D21
+        // Всплывающие меню
+        popup:                        'onyx_900',          // #25282B
+        popup_text:                   'white',              // #FCFCFC
+        popup_border:                 'onyx_700',           // #4A5057
+        popup_highlight:              'lazurit_950',       // #061933
+        popup_highlight_text:        'white',              // #FCFCFC
     },
 
     theme_experiment_colors: {
         // Основные акценты
-        '--primary':                               'accent',             // #0D50F2
-        '--primary-color':                         'accent',             // #0D50F2
+        '--primary':                               'accent',             // #4995FF
+        '--primary-color':                         'accent',             // #4995FF
         '--button-primary-text-color':             'white',              // #FCFCFC
-        '--button-primary-border-color':           'accent',             // #0D50F2
-        '--button-primary-background-color':       'accent',             // #0D50F2
-        '--button-primary-hover-background-color': 'accent_hover',      // #0C48DA
+        '--button-primary-border-color':           'accent',             // #4995FF
+        '--button-primary-background-color':       'accent',             // #4995FF
+        '--button-primary-hover-background-color': 'accent_hover',      // #77B0FF
 
         // Фоны
-        '--layout-background-0': 'white',              // #FCFCFC
-        '--layout-background-1': 'onyx_25',            // #F8F9F9
-        '--layout-background-2': 'onyx_50',            // #F2F3F4
-        '--layout-color-1':      'primary',            // #1C1D21
-        '--bg-color':            'white',              // #FCFCFC
+        '--layout-background-0': 'primary',            // #1C1D21
+        '--layout-background-1': 'onyx_950',          // #191B1D
+        '--layout-background-2': 'onyx_900',          // #25282B
+        '--layout-color-1':      'white',              // #FCFCFC
+        '--bg-color':            'primary',            // #1C1D21
 
         // Список писем
-        '--tree-view-bg':                     'white',              // #FCFCFC
-        '--tree-view-header-hover-bg':        'onyx_50',            // #F2F3F4
-        '--tree-view-header-hover-active-bg': 'onyx_100',           // #E5E7E9
+        '--tree-view-bg':                     'primary',            // #1C1D21
+        '--tree-view-header-hover-bg':        'onyx_950',          // #191B1D
+        '--tree-view-header-hover-active-bg': 'onyx_900',          // #25282B
 
-        '--new-folder-color': 'accent',             // #0D50F2
+        '--new-folder-color': 'accent',             // #4995FF
 
         // Боковая панель иконок
-        '--spaces-bg-color':                 'white',              // #FCFCFC
+        '--spaces-bg-color':                 'primary',            // #1C1D21
         '--spaces-button-active-text-color': 'white',              // #FCFCFC
-        '--spaces-button-active-bg-color':   'accent',             // #0D50F2
+        '--spaces-button-active-bg-color':   'accent',             // #4995FF
 
         // Иконки папок
-        '--folder-color-inbox':         'accent',             // #0D50F2
+        '--folder-color-inbox':         'accent',             // #4995FF
         '--folder-color-draft':         'amber_500',          // #FE8E21
         '--folder-color-sent':          'aquamarine_500',     // #00C2CC
         '--folder-color-archive':       'onyx_400',           // #969DA7
@@ -196,35 +193,35 @@ export default {
         '--folder-color-template':      'amber_300',          // #FEBB7A
         '--folder-color-newsletter':    'emerald_500',        // #26BF8C
         '--folder-color-rss':           'amber_600',          // #CB721A
-        '--folder-color-outbox':        'lazurit_500',        // #1C7BFF
-        '--folder-color-folder':        'lazurit_400',        // #4995FF
+        '--folder-color-outbox':        'accent',             // #4995FF
+        '--folder-color-folder':        'accent',             // #4995FF
         '--folder-color-folder-filter': 'tanzanite_500',      // #7551E0
         '--folder-color-folder-rss':    'amber_700',          // #985514
 
         // Бейджи непрочитанных
-        '--folderpane-unread-new-count-background': 'accent',             // #0D50F2
+        '--folderpane-unread-new-count-background': 'accent',             // #4995FF
         '--folderpane-unread-count-text':           'white',              // #FCFCFC
-        '--folderpane-unread-count-background':     'onyx_200',           // #CBCED3
+        '--folderpane-unread-count-background':     'onyx_700',           // #4A5057
 
         // Иконки в списке писем
         '--thread-pane-flag-fill':     'amber_500',           // #FE8E21
         '--thread-pane-flag-stroke':   'amber_600',           // #CB721A
         '--thread-pane-spam-fill':     'ruby_300',            // #F7839A
-        '--thread-pane-spam-stroke':   'ruby_500',            // #F23057
-        '--thread-pane-unread-fill':   'accent',              // #0D50F2
-        '--thread-pane-unread-stroke': 'accent_hover',        // #0C48DA
+        '--thread-pane-spam-stroke':   'ruby_500',           // #F23057
+        '--thread-pane-unread-fill':   'accent',              // #4995FF
+        '--thread-pane-unread-stroke': 'accent_hover',        // #77B0FF
 
         // Управление аккаунтом
-        '--accounts-bg-color':             'white',              // #FCFCFC
-        '--button-hover-background-color': 'onyx_50',            // #F2F3F4
-        '--primary-color-hover':           'accent_hover',       // #0C48DA
-        '--btn-bg':                        'onyx_50',            // #F2F3F4
-        '--btn-bg-hover':                  'onyx_100',           // #E5E7E9
+        '--accounts-bg-color':             'primary',            // #1C1D21
+        '--button-hover-background-color': 'onyx_800',          // #32353A
+        '--primary-color-hover':           'accent_hover',      // #77B0FF
+        '--btn-bg':                        'onyx_900',          // #25282B
+        '--btn-bg-hover':                  'onyx_800',          // #32353A
 
         // Календарь
-        '--viewHighlightBorderColor':     'accent',             // #0D50F2
-        '--viewDayBoxSelectedBackground': 'lazurit_100',        // #D2E5FF
+        '--viewHighlightBorderColor':     'accent',             // #4995FF
+        '--viewDayBoxSelectedBackground': 'lazurit_950',       // #061933
         '--viewTodayLabelColor':          'white',              // #FCFCFC
-        '--viewTodayLabelBackground':     'accent',             // #0D50F2
+        '--viewTodayLabelBackground':     'accent',             // #4995FF
     },
 };
