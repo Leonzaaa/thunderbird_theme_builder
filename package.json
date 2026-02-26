@@ -1,6 +1,6 @@
 {
-  "name": "dit-thunderbird",
-  "displayName": "ДИТ для Thunderbird",
+  "name": "dit-light-red-thunderbird",
+  "displayName": "ДИТ Light Red для Thunderbird",
   "version": "1.0.0",
   "description": "Light theme for Thunderbird based on DIT design system",
   "type": "module",
@@ -15,7 +15,7 @@
   "license": "MIT",
   "extra": {
     "thunderbird": {
-      "themeId": "dit-thunderbird@addons.thunderbird.net",
+      "themeId": "dit-light-red-thunderbird@addons.thunderbird.net",
       "thunderbirdMinVersion": "115.0",
       "thunderbirdMaxVersion": "155.0"
     }
