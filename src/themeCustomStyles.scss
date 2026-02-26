@@ -1,0 +1,31 @@
+/* ДИТ Light theme — custom overrides */
+
+:root {
+    scrollbar-color: var(--onyx_200) var(--onyx_50);
+}
+
+::selection {
+    background-color: var(--accent) !important;
+    color: var(--white) !important;
+}
+
+.message-header-container {
+    background-color: var(--white) !important;
+}
+
+.unread .subject {
+    color: var(--accent) !important;
+    font-weight: 600;
+}
+
+.flagged .subject {
+    color: var(--amber_500) !important;
+}
+
+a:not(.moz-txt-link) {
+    color: var(--accent) !important;
+}
+
+a:hover {
+    color: var(--accent_hover) !important;
+}

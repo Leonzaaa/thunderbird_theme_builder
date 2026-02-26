@@ -1,0 +1,26 @@
+{
+  "name": "dit-thunderbird",
+  "displayName": "ДИТ для Thunderbird",
+  "version": "1.0.0",
+  "description": "Light theme for Thunderbird based on DIT design system",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "build": "node src/build.js"
+  },
+  "keywords": ["thunderbird", "theme", "dit", "light"],
+  "author": {
+    "name": "Falko A.A."
+  },
+  "license": "MIT",
+  "extra": {
+    "thunderbird": {
+      "themeId": "dit-thunderbird@addons.thunderbird.net",
+      "thunderbirdMinVersion": "115.0",
+      "thunderbirdMaxVersion": "155.0"
+    }
+  },
+  "devDependencies": {
+    "thunderbird-theme-builder": "github:artrz/thunderbird-theme-builder"
+  }
+}

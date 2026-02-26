@@ -1,0 +1,45 @@
+---
+description: Синхронизировать HEX-комментарии при редактировании themeConfig.js
+globs: src/themeConfig.js
+alwaysApply: false
+---
+
+# Theme Config — HEX-комментарии к цветам
+
+При редактировании ссылок на цвета в секциях `theme_colors` и `theme_experiment_colors` файла `themeConfig.js` — всегда обновляй inline-комментарий с HEX-значением.
+
+## Правило
+
+Каждая строка, которая маппит ключ на имя из `color_scheme`, **должна** иметь комментарий с соответствующим HEX-кодом.
+
+## Формат
+
+```
+key: 'color_name',   // #hexval
+```
+
+## Пример
+
+Если в `color_scheme` есть:
+
+```javascript
+purple: '#bd93f9',
+pink:   '#ff79c6',
+```
+
+И ты меняешь:
+
+```javascript
+// БЫЛО
+tab_line: 'purple',   // #bd93f9
+
+// СТАЛО — комментарий должен обновиться под новый цвет
+tab_line: 'pink',     // #ff79c6
+```
+
+## Чеклист
+
+- Меняешь имя цвета → обнови `// #hex` комментарий
+- Добавляешь новую строку в `theme_colors` или `theme_experiment_colors` → добавь `// #hex` комментарий
+- Добавляешь новый цвет в `color_scheme` → комментарий не нужен (HEX уже является значением)
+- HEX-значение всегда бери из секции `color_scheme` в начале файла
