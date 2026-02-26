@@ -1,6 +1,6 @@
 import { build } from 'thunderbird-theme-builder';
 import { createRequire } from 'module';
-import { readFileSync } from 'fs';
+import { readFileSync, existsSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -20,10 +20,12 @@ build(theme, { stylesPath: 'themeCustomStyles.scss' });
 const zip = new AdmZip(xpiPath);
 const manifest = JSON.parse(zip.readAsText('manifest.json'));
 
-manifest.icons = { "16": "icon.png", "48": "icon.png", "128": "icon.png" };
-
-zip.addLocalFile(iconPath);
-zip.updateFile('manifest.json', Buffer.from(JSON.stringify(manifest, null, 1)));
-zip.writeZip(xpiPath);
-
-console.log('\n  Icon added to theme package.');
+if (existsSync(iconPath)) {
+    manifest.icons = { "16": "icon.png", "48": "icon.png", "128": "icon.png" };
+    zip.addLocalFile(iconPath, 'icon.png');
+    zip.updateFile('manifest.json', Buffer.from(JSON.stringify(manifest, null, 1)));
+    zip.writeZip(xpiPath);
+    console.log('\n  Icon added to theme package.');
+} else {
+    console.log('\n  Skipped icon (assets/icon.png not found).');
+}

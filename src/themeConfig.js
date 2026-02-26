@@ -1,10 +1,10 @@
 export default {
     color_scheme: {
-        // Brand & Accent
+        // Brand & Accent (Light Blue)
         brand:           '#F40B17',
         brand_hover:     '#DC0A15',
-        accent:          '#0D50F2',
-        accent_hover:    '#0C48DA',
+        accent:          '#4995FF',   // lazurit_400 — light blue
+        accent_hover:    '#1C7BFF',   // lazurit_500
 
         // Brand (Black)
         primary:         '#1C1D21',
@@ -33,8 +33,6 @@ export default {
         lazurit_150:     '#BBD8FF',
         lazurit_200:     '#A4CAFF',
         lazurit_300:     '#77B0FF',
-        lazurit_400:     '#4995FF',
-        lazurit_500:     '#1C7BFF',
         lazurit_600:     '#1662CC',
         lazurit_700:     '#114A99',
         lazurit_800:     '#0B3166',
@@ -113,7 +111,7 @@ export default {
         tab_background_text:          'primary',            // #1C1D21
         tab_background_separator:     'onyx_150',           // #D8DBDE
         tab_line:                     'accent',             // #0D50F2
-        tab_loading:                  'lazurit_500',        // #1C7BFF
+        tab_loading:                  'accent',             // #4995FF
         tab_selected:                 'white',              // #FCFCFC
         tab_text:                     'primary',            // #1C1D21
 
@@ -196,8 +194,8 @@ export default {
         '--folder-color-template':      'amber_300',          // #FEBB7A
         '--folder-color-newsletter':    'emerald_500',        // #26BF8C
         '--folder-color-rss':           'amber_600',          // #CB721A
-        '--folder-color-outbox':        'lazurit_500',        // #1C7BFF
-        '--folder-color-folder':        'lazurit_400',        // #4995FF
+        '--folder-color-outbox':        'accent',             // #4995FF
+        '--folder-color-folder':        'accent',             // #4995FF
         '--folder-color-folder-filter': 'tanzanite_500',      // #7551E0
         '--folder-color-folder-rss':    'amber_700',          // #985514
 
