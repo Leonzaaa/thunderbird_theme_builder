@@ -1,21 +1,21 @@
 {
-  "name": "dit-system-light-thunderbird",
-  "displayName": "ДИТ для Thunderbird (System Light)",
+  "name": "dit-system-dark-thunderbird",
+  "displayName": "ДИТ для Thunderbird (System Dark)",
   "version": "1.0.0",
-  "description": "System Light for Thunderbird based on DIT design system",
+  "description": "System Dark for Thunderbird based on DIT design system",
   "type": "module",
   "main": "index.js",
   "scripts": {
     "build": "node src/build.js"
   },
-  "keywords": ["thunderbird", "theme", "dit", "light", "system-light"],
+  "keywords": ["thunderbird", "theme", "dit", "dark", "system-dark"],
   "author": {
     "name": "Falko A.A."
   },
   "license": "MIT",
   "extra": {
     "thunderbird": {
-      "themeId": "dit-system-light-thunderbird@addons.thunderbird.net",
+      "themeId": "dit-system-dark-thunderbird@addons.thunderbird.net",
       "thunderbirdMinVersion": "115.0",
       "thunderbirdMaxVersion": "155.0"
     }

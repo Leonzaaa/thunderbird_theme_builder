@@ -1,6 +1,6 @@
-# DIT System Light для Thunderbird
+# DIT System Dark для Thunderbird
 
-Заготовка темы `system-light` для Mozilla Thunderbird в стиле ДИТ. Названия и описания подготовлены, палитру и набор иконок можно добавить позже.
+Заготовка темы `system-dark` для Mozilla Thunderbird в стиле ДИТ. Названия и описания подготовлены, палитру и набор иконок можно добавить позже.
 
 ## Быстрый старт
 
@@ -9,7 +9,7 @@ npm install
 npm run build
 ```
 
-Готовая тема: `build/dit-system-light-thunderbird.xpi`
+Готовая тема: `build/dit-system-dark-thunderbird.xpi`
 
 ## Структура проекта
 
@@ -19,7 +19,7 @@ src/
   themeCustomStyles.scss  — дополнительные CSS-правила
   build.js                — скрипт сборки
 build/
-  dit-system-light-thunderbird.xpi — собранная тема (после build)
+  dit-system-dark-thunderbird.xpi — собранная тема (после build)
 ```
 
 ## Как редактировать цветовую схему
@@ -172,7 +172,7 @@ export default {
 npm run build
 ```
 
-Результат: `build/dit-system-light-thunderbird.xpi`
+Результат: `build/dit-system-dark-thunderbird.xpi`
 
 ## Установка в Thunderbird
 
@@ -181,13 +181,13 @@ npm run build
 1. Откройте Thunderbird
 2. Перейдите в **Настройки** > **Дополнения и темы** (`Ctrl+Shift+A`)
 3. Нажмите шестерёнку > **Установить дополнение из файла...**
-4. Выберите `build/dit-system-light-thunderbird.xpi`
+4. Выберите `build/dit-system-dark-thunderbird.xpi`
 
 ### Для разработки (быстрая перезагрузка)
 
 1. Откройте Thunderbird
 2. Перейдите в **Инструменты** > **Средства разработки** > **Отладка дополнений** (или введите `about:debugging` в адресной строке)
-3. Нажмите **Загрузить временное дополнение** > выберите `build/dit-system-light-thunderbird.xpi`
+3. Нажмите **Загрузить временное дополнение** > выберите `build/dit-system-dark-thunderbird.xpi`
 4. После правок запустите `npm run build` и нажмите **Перезагрузить** в about:debugging
 
 ## Полезные инструменты Thunderbird
@@ -198,7 +198,7 @@ npm run build
 
 ## Палитра цветов
 
-Палитра для `system-light` будет добавлена позже, после подготовки финальных цветов.
+Палитра для `system-dark` будет добавлена позже, после подготовки финальных цветов.
 
 ## Лицензия
 
