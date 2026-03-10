@@ -1,4 +1,4 @@
-/* ДИТ Dark Blue theme — custom overrides */
+/* DIT System Light theme — custom overrides */
 
 :root {
     scrollbar-color: var(--onyx_600) var(--onyx_900);
@@ -29,3 +29,57 @@ a:not(.moz-txt-link) {
 a:hover {
     color: var(--accent_hover) !important;
 }
+
+/*
+ * Optional custom folder icons.
+ * Enable only the icons you actually add into src/assets/.
+ * If a rule stays commented out, Thunderbird keeps the default icon.
+ */
+
+/*
+td.folder-icon-inbox img {
+    content: url('folder-inbox.svg') !important;
+}
+*/
+
+/*
+td.folder-icon-draft img {
+    content: url('folder-draft.svg') !important;
+}
+*/
+
+/*
+td.folder-icon-sent img {
+    content: url('folder-sent.svg') !important;
+}
+*/
+
+/*
+td.folder-icon-archive img {
+    content: url('folder-archive.svg') !important;
+}
+*/
+
+/*
+td.folder-icon-spam img {
+    content: url('folder-spam.svg') !important;
+}
+*/
+
+/*
+td.folder-icon-trash img {
+    content: url('folder-trash.svg') !important;
+}
+*/
+
+/*
+td.folder-icon-template img {
+    content: url('folder-template.svg') !important;
+}
+*/
+
+/*
+td.folder-icon-folder img {
+    content: url('folder-folder.svg') !important;
+}
+*/

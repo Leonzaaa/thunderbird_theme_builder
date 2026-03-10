@@ -102,7 +102,7 @@ export default {
     },
 
     theme_colors: {
-        // Окно — тёмный фон
+        // Окно
         frame:                        'primary',            // #1C1D21
         frame_inactive:               'primary',            // #1C1D21
 
