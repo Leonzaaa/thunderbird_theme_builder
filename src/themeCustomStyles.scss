@@ -88,56 +88,230 @@ h2.day-column-heading[relation="today"] span,
     font-weight: 700;
 }
 
-/*
- * Optional custom folder icons.
- * Enable only the icons you actually add into src/assets/.
- * If a rule stays commented out, Thunderbird keeps the default icon.
- */
+/* ============================================================
+ * Custom folder pane icons (TB 115+ Supernova HTML structure)
+ * Selectors: #folderTree li[data-folder-type] > .container > .icon
+ * ============================================================ */
 
-/*
-td.folder-icon-inbox img {
+#folderTree li[data-folder-type="inbox"] > .container > .icon {
     content: url('folder-inbox.svg') !important;
 }
-*/
 
-/*
-td.folder-icon-draft img {
+#folderTree li[data-folder-type="drafts"] > .container > .icon {
     content: url('folder-draft.svg') !important;
 }
-*/
 
-/*
-td.folder-icon-sent img {
+#folderTree li[data-folder-type="sent"] > .container > .icon {
     content: url('folder-sent.svg') !important;
 }
-*/
 
-/*
-td.folder-icon-archive img {
+#folderTree li[data-folder-type="archive"] > .container > .icon {
     content: url('folder-archive.svg') !important;
 }
-*/
 
-/*
-td.folder-icon-spam img {
+#folderTree li[data-folder-type="junk"] > .container > .icon {
     content: url('folder-spam.svg') !important;
 }
-*/
 
-/*
-td.folder-icon-trash img {
+#folderTree li[data-folder-type="trash"] > .container > .icon {
     content: url('folder-trash.svg') !important;
 }
-*/
 
-/*
-td.folder-icon-template img {
+#folderTree li[data-folder-type="templates"] > .container > .icon {
     content: url('folder-template.svg') !important;
 }
-*/
 
-/*
-td.folder-icon-folder img {
+#folderTree li[data-folder-type="outbox"] > .container > .icon {
+    content: url('folder-outbox.svg') !important;
+}
+
+#folderTree li[data-folder-type="virtual"] > .container > .icon {
+    content: url('folder-filter.svg') !important;
+}
+
+#folderTree li[data-folder-type="rss"] > .container > .icon {
+    content: url('folder-rss.svg') !important;
+}
+
+#folderTree li:not([data-folder-type]):not([data-server-type]) > .container > .icon {
     content: url('folder-folder.svg') !important;
 }
-*/
+
+/* ============================================================
+ * Unified Toolbar button icons
+ * ============================================================ */
+
+#button-getmsg {
+    list-style-image: url('toolbar-getmsg.svg') !important;
+}
+
+#button-newmsg {
+    list-style-image: url('toolbar-newmsg.svg') !important;
+}
+
+#button-reply {
+    list-style-image: url('toolbar-reply.svg') !important;
+}
+
+#button-replyall {
+    list-style-image: url('toolbar-replyall.svg') !important;
+}
+
+#button-forward {
+    list-style-image: url('toolbar-forward.svg') !important;
+}
+
+#button-delete {
+    list-style-image: url('toolbar-delete.svg') !important;
+}
+
+#button-archive {
+    list-style-image: url('toolbar-archive.svg') !important;
+}
+
+#button-junk {
+    list-style-image: url('toolbar-junk.svg') !important;
+}
+
+#button-tag {
+    list-style-image: url('toolbar-tag.svg') !important;
+}
+
+#button-print {
+    list-style-image: url('toolbar-print.svg') !important;
+}
+
+#button-file {
+    list-style-image: url('toolbar-move.svg') !important;
+}
+
+#button-goback {
+    list-style-image: url('toolbar-goback.svg') !important;
+}
+
+#button-goforward {
+    list-style-image: url('toolbar-goforward.svg') !important;
+}
+
+/* Fallback: target inner .button-icon for unified toolbar rendering */
+#button-getmsg .button-icon,
+#button-newmsg .button-icon,
+#button-reply .button-icon,
+#button-replyall .button-icon,
+#button-forward .button-icon,
+#button-delete .button-icon,
+#button-archive .button-icon,
+#button-junk .button-icon,
+#button-tag .button-icon,
+#button-print .button-icon,
+#button-file .button-icon,
+#button-goback .button-icon,
+#button-goforward .button-icon {
+    -moz-context-properties: fill, fill-opacity !important;
+    fill: var(--white) !important;
+}
+
+/* ============================================================
+ * Spaces toolbar (left sidebar navigation)
+ * Real button IDs: #mailButton, #addressBookButton, etc.
+ * Icons are <img> inside, override via content on img.
+ * ============================================================ */
+
+#mailButton img {
+    content: url('spaces-mail.svg') !important;
+}
+
+#addressBookButton img {
+    content: url('spaces-addressbook.svg') !important;
+}
+
+#calendarButton img {
+    content: url('spaces-calendar.svg') !important;
+}
+
+#tasksButton img {
+    content: url('spaces-tasks.svg') !important;
+}
+
+#chatButton img {
+    content: url('spaces-chat.svg') !important;
+}
+
+#settingsButton img {
+    content: url('spaces-settings.svg') !important;
+}
+
+/* ============================================================
+ * Thread pane icons (message list)
+ * ============================================================ */
+
+.tree-view-row-flag img {
+    content: url('thread-star.svg') !important;
+}
+
+tr[data-properties~="flagged"] .tree-view-row-flag > .tree-button-flag > img {
+    content: url('thread-star.svg') !important;
+}
+
+tr[data-properties~="attach"] .attachmentcol-column img {
+    content: url('thread-attachment.svg') !important;
+}
+
+.tree-view-row-spam img {
+    content: url('thread-junk.svg') !important;
+}
+
+tr[data-properties~="junk"] .tree-view-row-spam > .tree-button-spam > img {
+    content: url('thread-junk.svg') !important;
+}
+
+tr[data-properties~="unread"] .tree-view-row-unread > .tree-button-unread > img {
+    content: url('thread-unread.svg') !important;
+}
+
+/* ============================================================
+ * Tab favicons (icons on tab titles)
+ * Override .tab-icon-image by matching src attribute values.
+ * TB sets src via JS to chrome:// URLs; [src*="..."] filters by type.
+ * ============================================================ */
+
+.tab-icon-image[src*="messenger"] {
+    content: url('tab-mail.svg') !important;
+}
+
+.tab-icon-image[src*="calendar"] {
+    content: url('tab-calendar.svg') !important;
+}
+
+.tab-icon-image[src*="tasks"],
+.tab-icon-image[src*="todo"] {
+    content: url('tab-tasks.svg') !important;
+}
+
+.tab-icon-image[src*="chat"] {
+    content: url('tab-chat.svg') !important;
+}
+
+.tab-icon-image[src*="addon"],
+.tab-icon-image[src*="extension"],
+.tab-icon-image[src*="about:addons"] {
+    content: url('tab-addons.svg') !important;
+}
+
+.tab-icon-image:not([src]) {
+    content: url('tab-mail.svg') !important;
+}
+
+/* ============================================================
+ * Thread pane — replied / forwarded indicators
+ * ============================================================ */
+
+tr[data-properties~="replied"] .correspondentcol-column img,
+tr[data-properties~="replied"] .subjectcol-column img.replied {
+    content: url('thread-replied.svg') !important;
+}
+
+tr[data-properties~="forwarded"] .correspondentcol-column img,
+tr[data-properties~="forwarded"] .subjectcol-column img.forwarded {
+    content: url('thread-forwarded.svg') !important;
+}
