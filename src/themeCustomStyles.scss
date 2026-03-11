@@ -1,20 +1,20 @@
 /* DIT System Light theme — custom overrides */
 
 :root {
-    scrollbar-color: var(--onyx_600) var(--onyx_900);
+    scrollbar-color: var(--onyx_200) var(--onyx_25);
 }
 
 ::selection {
-    background-color: var(--accent) !important;
+    background-color: var(--kyanite_500) !important;
     color: var(--white) !important;
 }
 
 .message-header-container {
-    background-color: var(--primary) !important;
+    background-color: var(--white) !important;
 }
 
 .unread .subject {
-    color: var(--accent) !important;
+    color: var(--kyanite_500) !important;
     font-weight: 600;
 }
 
@@ -23,11 +23,60 @@
 }
 
 a:not(.moz-txt-link) {
-    color: var(--accent) !important;
+    color: var(--kyanite_500) !important;
 }
 
 a:hover {
-    color: var(--accent_hover) !important;
+    color: var(--kyanite_700) !important;
+}
+
+/* Календарь — переопределение view-переменных */
+:root {
+    --viewTodayLabelColor: var(--primary);
+    --viewTodayDayLabelColor: var(--kyanite_700);
+    --viewTodayOffBackground: var(--onyx_25);
+    --viewTodayBackground: var(--onyx_50);
+    --viewDayBoxSelectedBackground: var(--onyx_50);
+    --viewDayBoxOtherSelectedBackground: var(--onyx_25);
+    --viewHighlightBorderColor: var(--kyanite_500);
+}
+
+/* Мини-календарь — прямой фикс на элементах.
+   theme_experiment stylesheet инжектится в chrome-контекст,
+   поэтому может таргетить .minimonth-day напрямую. */
+.minimonth-day[selected="true"] {
+    color: #1C1D21 !important;
+    background-color: color-mix(in srgb, #00AAFF 30%, transparent) !important;
+    border-color: #00AAFF !important;
+}
+
+.minimonth-day[selected="true"][today="true"] {
+    color: #1C1D21 !important;
+    background-color: color-mix(in srgb, #00AAFF 20%, transparent) !important;
+    border-color: #00AAFF !important;
+}
+
+.minimonth-day[today="true"] {
+    color: #1C1D21 !important;
+}
+
+/* Календарь — все заголовки колонок */
+h2.day-column-heading,
+h2.day-column-heading span,
+.day-column-heading,
+.day-column-heading * {
+    color: var(--primary) !important;
+}
+
+/* Календарь — сегодняшний день в заголовке */
+calendar-header-container[relation="today"] h2.day-column-heading,
+calendar-header-container[relation="today"] h2.day-column-heading span,
+h2.day-column-heading[relation="today"],
+h2.day-column-heading[relation="today"] span,
+.day-column-heading[relation="today"],
+.day-column-heading[relation="today"] * {
+    color: var(--kyanite_700) !important;
+    font-weight: 700;
 }
 
 /*
