@@ -50,6 +50,7 @@ export default {
         black_transparent_10: 'rgba(28, 29, 33, 0.10)',
         black_transparent_15: 'rgba(28, 29, 33, 0.15)',
         black_transparent_20: 'rgba(28, 29, 33, 0.20)',
+        onyx_500_transparent_20: 'rgba(124, 133, 145, 0.20)',
     },
 
     theme_colors: {
@@ -83,8 +84,8 @@ export default {
         toolbar_field_highlight_text: 'primary',            // #1C1D21
 
         // Кнопки
-        button_background_active:     'kyanite_500',        // #00AAFF
-        button_background_hover:      'kyanite_700',        // #006699
+        button_background_active:     'onyx_500_transparent_20', // rgba(124, 133, 145, 0.20)
+        button_background_hover:      'onyx_500_transparent_20', // rgba(124, 133, 145, 0.20)
 
         // Иконки
         icons:                        'onyx_600',           // #636A74
@@ -94,9 +95,9 @@ export default {
         sidebar:                      'white',              // #FCFCFC
         sidebar_text:                 'primary',            // #1C1D21
         sidebar_border:               'onyx_150',           // #D8DBDE
-        sidebar_highlight:            'kyanite_500',        // #00AAFF
-        sidebar_highlight_text:       'white',              // #FCFCFC
-        sidebar_highlight_border:     'kyanite_500',        // #00AAFF
+        sidebar_highlight:            'onyx_300',           // #B0B6BD
+        sidebar_highlight_text:       'primary',            // #1C1D21
+        sidebar_highlight_border:     'onyx_300',           // #B0B6BD
 
         // Всплывающие меню
         popup:                        'onyx_100',           // #E5E7E9

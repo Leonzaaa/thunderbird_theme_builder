@@ -4,6 +4,10 @@
     scrollbar-color: var(--onyx_200) var(--onyx_25);
 }
 
+#threadTree[rows="thread-card"] tbody tr:hover :where([class="card-container"]) {
+    background-color: rgba(176, 182, 189, 0.20) !important;
+}
+
 ::selection {
     background-color: var(--kyanite_500) !important;
     color: var(--white) !important;
