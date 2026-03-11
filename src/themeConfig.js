@@ -171,7 +171,6 @@ export default {
 
         // Календарь
         '--viewHighlightBorderColor':     'kyanite_500',        // #00AAFF
-        '--viewDayBoxSelectedBackground': 'onyx_50',            // #F2F3F4
         '--viewTodayLabelColor':          'white',              // #FCFCFC
         '--viewTodayLabelBackground':     'kyanite_700',        // #006699
     },

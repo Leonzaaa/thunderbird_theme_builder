@@ -34,10 +34,10 @@ a:hover {
 :root {
     --viewTodayLabelColor: var(--primary);
     --viewTodayDayLabelColor: var(--kyanite_700);
-    --viewTodayOffBackground: var(--onyx_25);
-    --viewTodayBackground: var(--onyx_50);
-    --viewDayBoxSelectedBackground: var(--onyx_50);
-    --viewDayBoxOtherSelectedBackground: var(--onyx_25);
+    --viewTodayOffBackground: color-mix(in srgb, var(--kyanite_500) 4%, white);
+    --viewTodayBackground: color-mix(in srgb, var(--kyanite_500) 8%, white);
+    --viewDayBoxSelectedBackground: color-mix(in srgb, var(--kyanite_500) 8%, white);
+    --viewDayBoxOtherSelectedBackground: color-mix(in srgb, var(--kyanite_500) 5%, white);
     --viewHighlightBorderColor: var(--kyanite_500);
 }
 
