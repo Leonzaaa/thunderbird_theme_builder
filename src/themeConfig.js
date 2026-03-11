@@ -53,6 +53,7 @@ export default {
         black_transparent_10: 'rgba(28, 29, 33, 0.10)',
         black_transparent_15: 'rgba(28, 29, 33, 0.15)',
         black_transparent_20: 'rgba(28, 29, 33, 0.20)',
+        onyx_500_transparent_20: 'rgba(124, 133, 145, 0.20)',
     },
 
     theme_colors: {
@@ -86,8 +87,8 @@ export default {
         toolbar_field_highlight_text: 'white',                // #FCFCFC
 
         // Кнопки
-        button_background_active:     'kyanite_500',          // #00AAFF
-        button_background_hover:      'kyanite_700',          // #006699
+        button_background_active:     'onyx_500_transparent_20', // rgba(124, 133, 145, 0.20)
+        button_background_hover:      'onyx_500_transparent_20', // rgba(124, 133, 145, 0.20)
 
         // Иконки
         icons:                        'white',                // #FCFCFC

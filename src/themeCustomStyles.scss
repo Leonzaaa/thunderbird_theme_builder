@@ -4,6 +4,10 @@
     scrollbar-color: var(--onyx_600) var(--onyx_900);
 }
 
+#threadTree[rows="thread-card"] tbody tr:hover :where([class="card-container"]) {
+    background-color: rgba(74, 80, 87, 0.50) !important;
+}
+
 ::selection {
     background-color: var(--kyanite_500) !important;
     color: var(--white) !important;
@@ -39,6 +43,13 @@ a:hover {
     --viewDayBoxSelectedBackground: color-mix(in srgb, var(--kyanite_500) 10%, var(--primary));
     --viewDayBoxOtherSelectedBackground: color-mix(in srgb, var(--kyanite_500) 6%, var(--primary));
     --viewHighlightBorderColor: var(--kyanite_500);
+}
+
+/* Мини-календарь — фон как у основного календаря */
+calendar-minimonth,
+.minimonth-month-box,
+.minimonth-calendar {
+    background-color: var(--primary) !important;
 }
 
 /* Мини-календарь — прямой фикс на элементах */
