@@ -5,7 +5,7 @@
 }
 
 ::selection {
-    background-color: var(--accent) !important;
+    background-color: var(--kyanite_500) !important;
     color: var(--white) !important;
 }
 
@@ -14,7 +14,7 @@
 }
 
 .unread .subject {
-    color: var(--accent) !important;
+    color: var(--kyanite_500) !important;
     font-weight: 600;
 }
 
@@ -23,11 +23,58 @@
 }
 
 a:not(.moz-txt-link) {
-    color: var(--accent) !important;
+    color: var(--kyanite_500) !important;
 }
 
 a:hover {
-    color: var(--accent_hover) !important;
+    color: var(--kyanite_700) !important;
+}
+
+/* Календарь — переопределение view-переменных */
+:root {
+    --viewTodayLabelColor: var(--white);
+    --viewTodayDayLabelColor: var(--kyanite_500);
+    --viewTodayOffBackground: color-mix(in srgb, var(--kyanite_500) 6%, var(--primary));
+    --viewTodayBackground: color-mix(in srgb, var(--kyanite_500) 12%, var(--primary));
+    --viewDayBoxSelectedBackground: color-mix(in srgb, var(--kyanite_500) 10%, var(--primary));
+    --viewDayBoxOtherSelectedBackground: color-mix(in srgb, var(--kyanite_500) 6%, var(--primary));
+    --viewHighlightBorderColor: var(--kyanite_500);
+}
+
+/* Мини-календарь — прямой фикс на элементах */
+.minimonth-day[selected="true"] {
+    color: #FCFCFC !important;
+    background-color: color-mix(in srgb, #00AAFF 30%, transparent) !important;
+    border-color: #00AAFF !important;
+}
+
+.minimonth-day[selected="true"][today="true"] {
+    color: #FCFCFC !important;
+    background-color: color-mix(in srgb, #00AAFF 25%, transparent) !important;
+    border-color: #00AAFF !important;
+}
+
+.minimonth-day[today="true"] {
+    color: #FCFCFC !important;
+}
+
+/* Календарь — все заголовки колонок */
+h2.day-column-heading,
+h2.day-column-heading span,
+.day-column-heading,
+.day-column-heading * {
+    color: var(--white) !important;
+}
+
+/* Календарь — сегодняшний день в заголовке */
+calendar-header-container[relation="today"] h2.day-column-heading,
+calendar-header-container[relation="today"] h2.day-column-heading span,
+h2.day-column-heading[relation="today"],
+h2.day-column-heading[relation="today"] span,
+.day-column-heading[relation="today"],
+.day-column-heading[relation="today"] * {
+    color: var(--kyanite_500) !important;
+    font-weight: 700;
 }
 
 /*
