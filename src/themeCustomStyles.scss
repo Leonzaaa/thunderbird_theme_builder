@@ -34,6 +34,18 @@ a:hover {
     color: var(--kyanite_700) !important;
 }
 
+/* Календарь — выделение в списке календарей (как в folder pane) */
+:root[lwt-tree] #calendar-list > li.selected {
+    background: color-mix(in srgb, var(--sidebar-background-color, #FCFCFC) 70%, var(--sidebar-highlight-background-color, #B0B6BD)) !important;
+    border-color: transparent !important;
+    color: var(--sidebar-text-color) !important;
+}
+
+#calendar-list > li.selected {
+    background-color: color-mix(in srgb, var(--white) 70%, var(--onyx_300)) !important;
+    border-color: transparent !important;
+}
+
 /* Календарь — переопределение view-переменных */
 :root {
     --viewTodayLabelColor: var(--primary);
